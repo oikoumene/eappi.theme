@@ -8048,7 +8048,7 @@ section.main {
 
 /*bordered concontainer*/
 /* line 202, ../scss/_styles.scss */
-.bordered-container {
+.bordered-container, #content, .portletWrapper {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 20px;

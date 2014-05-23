@@ -2,5 +2,11 @@
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
 
     <!-- -*- extra stuff goes here -*- -->
+	<javascript
+		id="++theme++eappi.theme/js/modernizr.js"
+		cacheable="True" compression="none"
+		cookable="False" enabled="True"
+		expression="request/HTTP_X_THEME_ENABLED | nothing"
+		inline="False" insert-before="jquery.js"/>
 
 </object>
