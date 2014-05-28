@@ -6,13 +6,6 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xi="http://www.w3.org/2001/XInclude"
     css:if-content="#visual-portal-wrapper">
-
-    <rules css:if-content="#visual-portal-wrapper">
-        <theme href="main.html" css:if-content="body.section-front-page"/>
-        <theme href="content-center.html" if-content="//div[@id='portal-column-one'] and //div[@id='portal-column-two']"/>
-        <theme href="content-right.html" css:if-content="#portal-column-one"/>
-        <theme href="content-left.html" css:if-content="#portal-column-two"/>
-        <theme href="content.html"/>
         
         <!--HEAD SECTION-->
         <!-- Drop styles in the head - these are added back by including them from Plone -->
@@ -63,6 +56,21 @@
             </form>
         </replace>
         
-
-    </rules>
+        <!--homepage-->
+        <rules css:if-content="#homepage-view.homepage-full-width">
+            <theme href="main.html"/>
+            <replace css:theme=".focus-container" css:content="#homepage-slider"/>
+        </rules>
+        
+        <theme href="content-center.html" if-content="//div[@id='portal-column-one'] and //div[@id='portal-column-two']"/>
+        <theme href="content-right.html" css:if-content="#portal-column-one"/>
+        <theme href="content-left.html" css:if-content="#portal-column-two"/>
+        <theme href="content.html"/>
+        
+        <drop theme="/html/body/script" />
+        <after css:theme-children="body">
+            <script src="++theme++eappi.theme/js/foundation.min.js"></script>
+            <script src="++theme++eappi.theme/js/app.js"></script>
+        </after>
+        
 </rules>
