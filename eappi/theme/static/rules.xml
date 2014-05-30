@@ -57,9 +57,47 @@
         </replace>
         
         <!--homepage-->
-        <rules css:if-content="#homepage-view.homepage-full-width">
+        <rules css:if-content="#homepage5-view.homepage-full-width">
             <theme href="main.html"/>
             <replace css:theme=".focus-container" css:content="#homepage-slider"/>
+            <replace css:theme=".feature-content.bordered-container">
+                
+                <div class="feature-content bordered-container">
+                    <div class="row">
+                      
+                      <div class="large-3 columns">
+                        <div class="f-text text-center">
+                          <p class="title">We’ve brought over 1,400 internationals to live in the West Bank and monitor human rights. Here’s what makes us different. </p>
+                        </div>
+                      </div>
+                      <div class="large-3 columns">
+                        <div class="f-images">
+                          <a href="">
+                            <img src="./images/f-image4.png" alt="f-image1" />
+                            <p>We have the most eyes on the ground</p>
+                        </a>
+                        </div>
+                      </div>
+                      <div class="large-3 columns">
+                        <div class="f-images">
+                          <a href="">
+                            <img src="./images/f-image5.png" alt="f-image2" />
+                            <p>We are community-oriented</p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="large-3 columns">
+                        <div class="f-images">
+                          <a href="">
+                            <img src="./images/f-image6.png" alt="f-image3" />
+                            <p>We believe in working together</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+            </replace>
         </rules>
         
         <theme href="content-center.html" if-content="//div[@id='portal-column-one'] and //div[@id='portal-column-two']"/>
