@@ -89,6 +89,7 @@
                     </div>
                 </xsl:for-each>
             </replace>
+            <replace css:theme=".blog-post-container" css:content="#homepage3-newsblock.blog-container" />
         </rules>
         
         <theme href="content-center.html" if-content="//div[@id='portal-column-one'] and //div[@id='portal-column-two']"/>
