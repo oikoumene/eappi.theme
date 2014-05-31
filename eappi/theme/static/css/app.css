@@ -8101,31 +8101,32 @@ section.main {
 /*blog post*/
 /* line 241, ../scss/_styles.scss */
 .blog-post {
-  column-count: 2;
+  min-height: 48px;
+  margin-bottom: 10px;
 }
-/* line 243, ../scss/_styles.scss */
+/* line 244, ../scss/_styles.scss */
 .blog-post .post-img {
   float: left;
   width: 48px;
   height: 48px;
 }
-/* line 248, ../scss/_styles.scss */
+/* line 249, ../scss/_styles.scss */
 .blog-post .post-text {
   margin-left: 58px;
 }
-/* line 251, ../scss/_styles.scss */
+/* line 252, ../scss/_styles.scss */
 .blog-post .post-text a p {
   font-size: 12px;
   line-height: 14px;
 }
 
 /*social connect*/
-/* line 259, ../scss/_styles.scss */
+/* line 260, ../scss/_styles.scss */
 .social-connect-container {
   margin-bottom: 20px;
 }
 
-/* line 263, ../scss/_styles.scss */
+/* line 264, ../scss/_styles.scss */
 .social-icon a {
   text-indent: -9999px;
   height: 48px;
@@ -8134,24 +8135,24 @@ section.main {
   float: left;
   margin: 0 2px;
 }
-/* line 271, ../scss/_styles.scss */
+/* line 272, ../scss/_styles.scss */
 .social-icon a.facebook {
   background: transparent url(../images/social-icon.png) 0 0 no-repeat;
 }
-/* line 274, ../scss/_styles.scss */
+/* line 275, ../scss/_styles.scss */
 .social-icon a.youtube {
   background: transparent url(../images/social-icon.png) -144px 0 no-repeat;
 }
-/* line 277, ../scss/_styles.scss */
+/* line 278, ../scss/_styles.scss */
 .social-icon a.twitter {
   background: transparent url(../images/social-icon.png) -48px 0 no-repeat;
 }
-/* line 280, ../scss/_styles.scss */
+/* line 281, ../scss/_styles.scss */
 .social-icon a.g-plus {
   background: transparent url(../images/social-icon.png) -96px 0 no-repeat;
 }
 
-/* line 284, ../scss/_styles.scss */
+/* line 285, ../scss/_styles.scss */
 .social-icon:after {
   content: " ";
   display: block;
@@ -8159,7 +8160,7 @@ section.main {
 }
 
 /*sign up for update*/
-/* line 291, ../scss/_styles.scss */
+/* line 292, ../scss/_styles.scss */
 .sign-up-for-update a.sign-up-link {
   border: 1px solid #ccc;
   display: block;
@@ -8168,79 +8169,79 @@ section.main {
   color: #ccc;
   position: relative;
 }
-/* line 298, ../scss/_styles.scss */
+/* line 299, ../scss/_styles.scss */
 .sign-up-for-update a.sign-up-link img {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-/* line 306, ../scss/_styles.scss */
+/* line 307, ../scss/_styles.scss */
 footer .footer-top {
   margin-bottom: 20px;
 }
-/* line 308, ../scss/_styles.scss */
+/* line 309, ../scss/_styles.scss */
 footer .footer-top h4 {
   font-size: 18px;
   color: #F47C0E;
 }
-/* line 312, ../scss/_styles.scss */
+/* line 313, ../scss/_styles.scss */
 footer .footer-top ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 315, ../scss/_styles.scss */
+/* line 316, ../scss/_styles.scss */
 footer .footer-top ul li {
   font-size: 12px;
   line-height: 24px;
 }
-/* line 318, ../scss/_styles.scss */
+/* line 319, ../scss/_styles.scss */
 footer .footer-top ul li a {
   color: #000;
 }
-/* line 321, ../scss/_styles.scss */
+/* line 322, ../scss/_styles.scss */
 footer .footer-top ul li a:hover {
   color: #555;
 }
-/* line 327, ../scss/_styles.scss */
+/* line 328, ../scss/_styles.scss */
 footer .footer-bottom {
   border-top: 1px solid #ccc;
   padding-top: 20px;
 }
-/* line 330, ../scss/_styles.scss */
+/* line 331, ../scss/_styles.scss */
 footer .footer-bottom p {
   font-size: 16px;
 }
-/* line 333, ../scss/_styles.scss */
+/* line 334, ../scss/_styles.scss */
 footer .footer-bottom ul {
   list-style: none;
 }
-/* line 335, ../scss/_styles.scss */
+/* line 336, ../scss/_styles.scss */
 footer .footer-bottom ul li {
   display: inline;
   margin-left: 10px;
 }
 
-/* line 343, ../scss/_styles.scss */
+/* line 344, ../scss/_styles.scss */
 .sm-social-icon a {
   width: 16px;
   display: block;
   padding-left: 20px;
 }
-/* line 348, ../scss/_styles.scss */
+/* line 349, ../scss/_styles.scss */
 .sm-social-icon a.sm-blog {
   background: transparent url(../images/small-social-icon.png) 0 0 no-repeat;
 }
-/* line 351, ../scss/_styles.scss */
+/* line 352, ../scss/_styles.scss */
 .sm-social-icon a.sm-facebook {
   background: transparent url(../images/small-social-icon.png) 0 -24px no-repeat;
 }
-/* line 354, ../scss/_styles.scss */
+/* line 355, ../scss/_styles.scss */
 .sm-social-icon a.sm-twitter {
   background: transparent url(../images/small-social-icon.png) 0 -48px no-repeat;
 }
 
-/* line 358, ../scss/_styles.scss */
+/* line 359, ../scss/_styles.scss */
 #homepage-slider {
   display: block;
   clear: both;
