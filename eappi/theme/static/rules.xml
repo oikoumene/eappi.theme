@@ -80,7 +80,9 @@
                                                 <xsl:value-of select="div[2]/h3/a/@href" />
                                             </xsl:attribute>
                                             <xsl:copy-of select="div[1]/img" />
-                                            <xsl:copy-of select="div[2]/p" />
+                                            <p>
+                                                <xsl:value-of select="div[2]/h3" />
+                                            </p>
                                         </xsl:element>
                                     </div>
                                 </div>
