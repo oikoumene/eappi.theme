@@ -8278,6 +8278,14 @@ footer .footer-bottom ul li {
   border-bottom: none;
 }
 
+/*class row adjustment*/
+/* line 385, ../scss/_styles.scss */
+div.row {
+  float: none !important;
+  display: block;
+  position: relative;
+}
+
 /* @group Editing */
 /* @group Tabs */
 /* Color differences between the two tab types */
