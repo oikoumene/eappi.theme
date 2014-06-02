@@ -8241,24 +8241,41 @@ footer .footer-bottom ul li {
   background: transparent url(../images/small-social-icon.png) 0 -48px no-repeat;
 }
 
-/* line 359, ../scss/_styles.scss */
+/*slider*/
+/* line 360, ../scss/_styles.scss */
 #homepage-slider {
   display: block;
   clear: both;
 }
 
-/* line 363, ../scss/_styles.scss */
+/* line 364, ../scss/_styles.scss */
 .nav-title {
   font-size: 18px;
   color: #F47C0E;
-  margin: 0;
+  margin: 10px 10px 0 0 !important;
 }
 
-/* line 368, ../scss/_styles.scss */
+/* line 369, ../scss/_styles.scss */
 .nav-text {
   font-size: 12px;
   color: #F47C0E;
   line-height: 14px;
+}
+
+/* item navigator */
+/* line 375, ../scss/_styles.scss */
+.lof-slidecontent ul.navigator-wrap-inner li.active {
+  background: url(../images/slider-arrow.png) no-repeat scroll left center !important;
+}
+
+/* line 378, ../scss/_styles.scss */
+.lof-slidecontent ul.navigator-wrap-inner li:first-child > div {
+  border-top: none;
+}
+
+/* line 381, ../scss/_styles.scss */
+.lof-slidecontent ul.navigator-wrap-inner li:last-child > div {
+  border-bottom: none;
 }
 
 /* @group Editing */
