@@ -8286,6 +8286,40 @@ div.row {
   position: relative;
 }
 
+/*input type submit*/
+/* line 391, ../scss/_styles.scss */
+input[type="submit"] {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #f47c0e;
+  border-color: #c56309;
+  color: white;
+}
+/* line 134, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
+input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #c56309;
+}
+/* line 145, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
+input[type="submit"]:hover, input[type="submit"]:focus {
+  color: white;
+}
+
 /* @group Editing */
 /* @group Tabs */
 /* Color differences between the two tab types */
