@@ -8328,6 +8328,14 @@ input[type="submit"]:hover, input[type="submit"]:focus {
   color: white;
 }
 
+/*viewlet-below-content*/
+/* line 401, ../scss/_styles.scss */
+#viewlet-below-content:before {
+  display: block;
+  clear: both;
+  content: ' ';
+}
+
 /* @group Editing */
 /* @group Tabs */
 /* Color differences between the two tab types */
