@@ -8286,8 +8286,16 @@ div.row {
   position: relative;
 }
 
-/*input type submit*/
+/*class column adjustment*/
 /* line 391, ../scss/_styles.scss */
+th.column {
+  padding: 0;
+  float: none;
+  width: auto;
+}
+
+/*input type submit*/
+/* line 397, ../scss/_styles.scss */
 input[type="submit"] {
   border-style: solid;
   border-width: 0px;
