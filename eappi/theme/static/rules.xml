@@ -91,6 +91,14 @@
             </replace>
             <replace css:theme-children=".blog-section" css:content-children=".blog-section" />
             <replace css:theme-children=".social-newsletter" css:content-children=".social-newsletter" />
+            <!--portlet on footer-->
+            <replace css:theme-children=".f-connect" css:content-children=".portlet-static-connect" />
+            <replace css:theme-children=".f-get-to-know" css:content-children=".portlet-static-get-to-know-us" />
+            <replace css:theme-children=".f-get-to-know" css:content-children=".portlet-static-get-to-know-us" />
+            <replace css:theme-children=".f-resources" css:content-children=".portlet-static-resources" />
+            <replace css:theme-children=".f-join" css:content-children=".portlet-static-join" />
+            <replace css:theme-children=".f-get-email" css:content-children=".portlet-static-get-our-email" />
+            
         </rules>
         
         <theme href="content-center.html" if-content="//div[@id='portal-column-one'] and //div[@id='portal-column-two']"/>
