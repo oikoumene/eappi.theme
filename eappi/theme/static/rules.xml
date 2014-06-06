@@ -29,6 +29,10 @@
         <!--mobile menu-->
         <replace css:theme-children="ul.mobile-menu"
             css:content-children="#portal-globalnav"/>
+        
+        <replace 
+            css:theme-children='#portal-languageselector' 
+            css:content-children='#portal-languageselector'/>
 
         <replace css:theme-children="#portal-column-content"
             css:content-children="#portal-column-content"/>
