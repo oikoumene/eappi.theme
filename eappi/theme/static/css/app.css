@@ -7880,7 +7880,7 @@ ul.language li:last-child > a {
 }
 
 /* line 62, ../scss/_styles.scss */
-ul.language li.selected a,
+ul.language li.currentLanguage a,
 ul.language li a:hover {
   color: #000;
 }
