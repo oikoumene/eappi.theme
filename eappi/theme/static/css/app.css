@@ -8336,6 +8336,19 @@ input[type="submit"]:hover, input[type="submit"]:focus {
   content: ' ';
 }
 
+/*portlet*/
+/* line 407, ../scss/_styles.scss */
+.managedPortlet .portletHeader {
+  padding: 0.42em 1em;
+  background: none repeat scroll 0% 0% #DDD;
+  line-height: normal;
+}
+
+/* line 412, ../scss/_styles.scss */
+div.portletAssignments .managedPortletActions {
+  float: right;
+}
+
 /* @group Editing */
 /* @group Tabs */
 /* Color differences between the two tab types */
