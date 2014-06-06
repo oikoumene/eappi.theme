@@ -33,6 +33,9 @@
         <replace 
             css:theme-children='#portal-languageselector' 
             css:content-children='#portal-languageselector'/>
+            <!--mobile language-->
+        <replace css:theme-children="ul.mobile-languageselector"
+            css:content-children="#portal-languageselector"/>
 
         <replace css:theme-children="#portal-column-content"
             css:content-children="#portal-column-content"/>
