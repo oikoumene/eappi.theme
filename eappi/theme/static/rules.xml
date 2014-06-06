@@ -63,7 +63,7 @@
         <!--homepage-->
         <rules css:if-content="#homepage5-view.homepage-full-width">
             <theme href="main.html"/>
-            <replace css:theme=".focus-container" css:content="#homepage-slider"/>
+            <replace css:theme=".focus-container" css:content=".focus-container"/>
             <replace css:theme-children=".news-container">
                 <xsl:for-each css:select="#homepage3-newsblock.news-cell">
                     <div class="feature-content bordered-container">
