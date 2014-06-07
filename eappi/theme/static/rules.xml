@@ -33,6 +33,9 @@
         <replace 
             css:theme-children='#portal-languageselector' 
             css:content-children='#portal-languageselector'/>
+            <!--mobile language-->
+        <replace css:theme-children="ul.mobile-languageselector"
+            css:content-children="#portal-languageselector"/>
 
         <replace css:theme-children="#portal-column-content"
             css:content-children="#portal-column-content"/>
@@ -63,7 +66,7 @@
         <!--homepage-->
         <rules css:if-content="#homepage5-view.homepage-full-width">
             <theme href="main.html"/>
-            <replace css:theme=".focus-container" css:content="#homepage-slider"/>
+            <replace css:theme=".focus-container" css:content=".focus-container"/>
             <replace css:theme-children=".news-container">
                 <xsl:for-each css:select="#homepage3-newsblock.news-cell">
                     <div class="feature-content bordered-container">
