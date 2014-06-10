@@ -11,5 +11,11 @@
 		cookable="False" enabled="True"
 		expression="request/HTTP_X_THEME_ENABLED | nothing"
 		inline="False" insert-before="++resource++plone.app.jquery.js"/>
+	<javascript
+		id="http://code.jquery.com/jquery-migrate-1.2.1.min.js"
+		cacheable="True" compression="none"
+		cookable="False" enabled="True"
+		expression="request/HTTP_X_THEME_ENABLED | nothing"
+		inline="False" insert-before="++resource++plone.app.jquery.js"/>
 
 </object>
