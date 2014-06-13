@@ -66,6 +66,10 @@
         <!--homepage-->
         <rules css:if-content="#homepage5-view.homepage-full-width">
             <theme href="main.html"/>
+            <before css:theme=".focus-container">
+                <xsl:copy-of css:select="#edit-bar" />
+                <xsl:copy-of css:select=".portalMessage.info" />
+            </before>
             <replace css:theme=".focus-container" css:content=".focus-container"/>
             <replace css:theme-children=".news-container">
                 <xsl:for-each css:select="#homepage3-newsblock.news-cell">
