@@ -32,6 +32,7 @@ setup(name='eappi.theme',
           'plone.app.referenceablebehavior',
           'collective.dexteritytextindexer',
           'z3c.jbot'
+          'wcc.homepage'
           # -*- Extra requirements: -*-
       ],
       extras_require={
