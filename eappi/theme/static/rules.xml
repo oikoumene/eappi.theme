@@ -36,6 +36,9 @@
             <!--mobile language-->
         <replace css:theme-children="ul.mobile-languageselector"
             css:content-children="#portal-languageselector"/>
+        
+        <!--drop from content-->
+        <drop css:content="#parent-fieldname-description" />
 
         <replace css:theme-children="#portal-column-content"
             css:content-children="#portal-column-content"/>
