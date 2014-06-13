@@ -101,7 +101,10 @@
                 </xsl:for-each>
             </replace>
             <replace css:theme-children=".blog-section" css:content-children=".blog-section" />
-            <replace css:theme-children=".social-newsletter" css:content-children=".social-newsletter" />
+            <!--portlet below content-->
+            <after css:theme-children="section.main" css:content=".managePortletsBelowLink" />
+            <replace css:theme-children=".social-connect-container" css:content-children=".portlet-static-connect-with-us" />
+            <replace css:theme-children=".sign-up-for-update-container" css:content-children=".portlet-static-email-updates" />
             
         </rules>
         <!--portlet on footer-->
