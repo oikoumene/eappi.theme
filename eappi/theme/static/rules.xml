@@ -117,6 +117,17 @@
         <theme href="content-left.html" css:if-content="#portal-column-two"/>
         <theme href="content.html"/>
         
+        <!--portlet links-->
+        <after css:theme-children=".footer-top">
+            <div class="manageFooterPortletsLink">
+                <xsl:element name="a">
+                    <xsl:attribute name="class">managePortletsFallback</xsl:attribute>
+                    <xsl:attribute name="href">/eappi/@@manage-portletsfooter</xsl:attribute>
+                    Add, edit or remove a portlet in the footer
+                </xsl:element>
+            </div>
+        </after>
+        
         <drop theme="/html/body/script" />
         <after css:theme-children="body">
             <script src="++theme++eappi.theme/js/foundation.min.js"></script>
