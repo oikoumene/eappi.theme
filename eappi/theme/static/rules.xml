@@ -38,7 +38,7 @@
             css:content-children="#portal-languageselector"/>
         
         <!--drop from content-->
-        <drop css:content="#parent-fieldname-description" />
+        <drop css:content="body.template-document_view #parent-fieldname-description" />
 
         <replace css:theme-children="#portal-column-content"
             css:content-children="#portal-column-content"/>
