@@ -119,13 +119,15 @@
         
         <!--portlet links-->
         <after css:theme-children=".footer-top">
-            <div class="manageFooterPortletsLink">
-                <xsl:element name="a">
-                    <xsl:attribute name="class">managePortletsFallback</xsl:attribute>
-                    <xsl:attribute name="href">/eappi/@@manage-portletsfooter</xsl:attribute>
-                    Add, edit or remove a portlet in the footer
-                </xsl:element>
-            </div>
+            <xsl:if css:test=".manageFooterPortletsLink">
+                <div class="manageFooterPortletsLink">
+                    <xsl:element name="a">
+                        <xsl:attribute name="class">managePortletsFallback</xsl:attribute>
+                        <xsl:attribute name="href">/eappi/@@manage-portletsfooter</xsl:attribute>
+                        Add, edit or remove a portlet in the footer
+                    </xsl:element>
+                </div>
+            </xsl:if>
         </after>
         
         <drop theme="/html/body/script" />
