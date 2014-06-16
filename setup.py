@@ -15,10 +15,10 @@ setup(name='eappi.theme',
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='',
-      author='Inigo Consulting',
-      author_email='team@inigo-tech.com',
-      url='http://github.com/inigoconsulting/',
+      keywords='plone theme',
+      author='Afterfive Technologies',
+      author_email='inquiry@afterfivetech.com',
+      url='http://github.com/afterfivetech',
       license='gpl',
       packages=find_packages(),
       namespace_packages=['eappi'],
@@ -47,7 +47,7 @@ setup(name='eappi.theme',
       # The next two lines may be deleted after you no longer need
       # addcontent support from paster and before you distribute
       # your package.
-      setup_requires=["PasteScript"],
-      paster_plugins=["templer.localcommands"],
+      # setup_requires=["PasteScript"],
+      # paster_plugins=["templer.localcommands"],
 
       )
