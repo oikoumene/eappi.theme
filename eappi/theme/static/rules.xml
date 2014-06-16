@@ -15,6 +15,7 @@
         <merge theme="/html/body" content="/html/body" attributes="class"/>
         <merge theme="/html/body" content="/html/body" attributes="dir"/>
         <append css:theme="body" css:content="#plone-analytics"/>
+        <prepend css:theme=".main-wrapper" css:content="#portal-personaltools"/>
 
         <replace css:theme-children="#portal-personaltools-wrapper"
             css:content-children="#portal-personaltools-wrapper"/>
