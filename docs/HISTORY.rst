@@ -10,16 +10,15 @@ Changelog
 1.2 (2014-06-26)
 ----------------
 
-- Nothing changed yet.
+- fix buttons
+- change color scheme for headings
 
 
 1.1 (2014-06-16)
 ----------------
 
-- Nothing changed yet.
-
+- update social icons
 
 1.0 (2014-06-16)
 ----------------
-
- - Initial eappi.theme package release
+- Initial eappi.theme package release
