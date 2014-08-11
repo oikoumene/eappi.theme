@@ -151,6 +151,35 @@
             </replace>
             
         </rules>
+        <!--featureimagelisting -->
+        <rules css:if-content=".template-featureimagelisting_view">
+        <replace css:content="table">
+            <div class="row">
+                <div class="large-12 columns">
+                <xsl:for-each css:select="tr">
+                <div class="bordered-container">
+                    <div class="row">
+                    <div class="column large-3">
+                        <xsl:copy-of css:select="td:nth-child(1)"/>
+                    </div>
+                    <div class="column large-9">
+                        <xsl:copy-of css:select="td:nth-child(2)"/>
+                    </div>
+                </div>
+
+                </div>
+                </xsl:for-each>
+
+            </div>
+            </div>
+
+        </replace>
+            
+        </rules>
+
+
+
+
         <!--portlet on footer-->
         <replace css:theme-children=".f-connect" css:content-children=".portlet-static-connect" />
         <replace css:theme-children=".f-get-to-know" css:content-children=".portlet-static-get-to-know-us" />
