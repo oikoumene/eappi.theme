@@ -106,7 +106,8 @@
                     </div>
                 </xsl:for-each>
             </replace>
-            <replace css:theme-children=".blog-section" css:content-children=".blog-section" />
+            <!--<replace css:theme-children=".blog-section" css:content-children=".blog-section" />-->
+            <replace css:theme-children=".blog-section > div" css:content=".portletRss" />
             <!--portlet below content-->
             <after css:theme-children="section.main" css:content=".managePortletsBelowLink" />
             <replace css:theme-children=".social-connect-container" css:content-children=".portlet-static-connect-with-us" />
