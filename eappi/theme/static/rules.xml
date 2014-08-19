@@ -113,7 +113,7 @@
                     <h3><xsl:copy-of css:select=".portletHeader a" /></h3>
                     <div class="row">
                         <xsl:for-each css:select=".portletRss .portletItem">
-                            <div class="large-6 medium-6 columns">
+                            <div class="large-6 medium-6 columns blog-item-wrapper">
                                 <article class="blog-post">
                                     <div class="post-img">
                                         <a href="">
