@@ -116,14 +116,12 @@
                             <div class="large-6 medium-6 columns blog-item-wrapper">
                                 <article class="blog-post">
                                     <div class="post-img">
-                                        <a href="">
-                                          <img src="" alt="" />
-                                        </a>
+                                        <!--<a href="">-->
+                                        <!--  <img src="" />-->
+                                        <!--</a>-->
                                     </div>
                                     <div class="post-text">
-                                        <span class="post-date">
-                                            <xsl:value-of css:select=".portletItemDetails" />
-                                        </span>
+                                        <p class="post-date"><xsl:value-of select="a/span" /></p>
                                         <p>
                                             <xsl:element name="a">
                                                 <xsl:attribute name="href">
