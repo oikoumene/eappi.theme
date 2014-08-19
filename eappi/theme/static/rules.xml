@@ -115,11 +115,13 @@
                         <xsl:for-each css:select=".portletRss .portletItem">
                             <div class="large-6 medium-6 columns blog-item-wrapper">
                                 <article class="blog-post">
+                                    <!-- for future images
                                     <div class="post-img">
                                         <a href="">
                                           <img src="" alt="" />
                                         </a>
                                     </div>
+                                    -->
                                     <div class="post-text">
                                         <span class="post-date">
                                             <xsl:value-of css:select=".portletItemDetails" />
