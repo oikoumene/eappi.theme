@@ -107,7 +107,42 @@
                 </xsl:for-each>
             </replace>
             <!--<replace css:theme-children=".blog-section" css:content-children=".blog-section" />-->
-            <replace css:theme-children=".blog-section > div" css:content=".portletRss" />
+            <replace css:theme-children=".blog-section > div">
+                
+                <xsl:if css:test=".portletRss">
+                    <h3><xsl:copy-of css:select=".portletHeader a" /></h3>
+                    <div class="row">
+                        <xsl:for-each css:select=".portletRss .portletItem">
+                            <div class="large-6 medium-6 columns blog-item-wrapper">
+                                <article class="blog-post">
+                                    <!-- for future images
+                                    <div class="post-img">
+                                        <a href="">
+                                          <img src="" alt="" />
+                                        </a>
+                                    </div>
+                                    -->
+                                    <div class="post-text">
+                                        <span class="post-date">
+                                            <xsl:value-of css:select=".portletItemDetails" />
+                                        </span>
+                                        <p>
+                                            <xsl:element name="a">
+                                                <xsl:attribute name="href">
+                                                    <xsl:value-of select="a/@href" />
+                                                </xsl:attribute>
+                                                <xsl:copy-of select="a/text()" />
+                                            </xsl:element>
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </xsl:for-each>
+                    </div>
+                    <p><xsl:copy-of css:select=".portletFooter a" /></p>
+                </xsl:if>
+                
+            </replace>
             <!--portlet below content-->
             <after css:theme-children="section.main" css:content=".managePortletsBelowLink" />
             <replace css:theme-children=".social-connect-container" css:content-children=".portlet-static-connect-with-us" />
