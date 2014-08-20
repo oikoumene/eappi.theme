@@ -67,6 +67,22 @@
             </form>
         </replace>
         
+        <!--feature image listing view-->
+        <replace css:content="#content-core > div > table" css-if-content=".template-featureimagelisting_view">
+            <xsl:for-each css:select=".featureimagelisting-row">
+                <div class="featureimagelisting-row row">
+                    <div class="large-2 medium-2 columns">
+                        <xsl:copy-of css:select="td:nth-child(1) > a"/>
+                    </div>
+                    <div class="large-10 medium-10 columns">
+                        <xsl:copy-of css:select="td:nth-child(2) > h4"/>
+                        <xsl:copy-of css:select="td:nth-child(2) > div"/>
+                        <xsl:copy-of css:select="td:nth-child(2) > p"/>
+                    </div>
+                </div>
+            </xsl:for-each>
+        </replace>
+        
         <!--homepage-->
         <rules css:if-content="#homepage5-view.homepage-full-width">
             <theme href="main.html"/>
@@ -117,15 +133,13 @@
                                 <article class="blog-post">
                                     <!-- for future images
                                     <div class="post-img">
-                                        <a href="">
-                                          <img src="" alt="" />
-                                        </a>
+                                        <!--<a href="">-->
+                                        <!--  <img src="" />-->
+                                        <!--</a>-->
                                     </div>
                                     -->
                                     <div class="post-text">
-                                        <span class="post-date">
-                                            <xsl:value-of css:select=".portletItemDetails" />
-                                        </span>
+                                        <p class="post-date"><xsl:value-of select="a/span" /></p>
                                         <p>
                                             <xsl:element name="a">
                                                 <xsl:attribute name="href">
@@ -147,8 +161,8 @@
             <after css:theme-children="section.main" css:content=".managePortletsBelowLink" />
             <replace css:theme-children=".social-connect-container" css:content-children=".portlet-static-connect-with-us" />
             <replace css:theme-children=".sign-up-for-update-container" css:content-children=".portlet-static-email-updates" />
-            
         </rules>
+        
         <!--portlet on footer-->
         <replace css:theme-children=".f-connect" css:content-children=".portlet-static-connect" />
         <replace css:theme-children=".f-get-to-know" css:content-children=".portlet-static-get-to-know-us" />
