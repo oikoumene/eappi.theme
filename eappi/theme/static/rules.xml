@@ -24,6 +24,16 @@
 
         <replace css:theme="#logo"
             css:content="#portal-logo"/>
+        
+        <replace css:theme="#mobile-logo">
+            <xsl:element name="a">
+                <xsl:attribute name="href"><xsl:value-of select="//a[@id='portal-logo']/@href" /></xsl:attribute>
+                <xsl:element name="img">
+                    <xsl:attribute name="src">/++theme++eappi.theme/images/mobile-logo.png</xsl:attribute>
+                    <xsl:attribute name="alt">EAPPI Logo for Mobile</xsl:attribute>
+                </xsl:element>
+            </xsl:element>
+        </replace>
 
         <replace css:theme-children="#portal-globalnav"
             css:content-children="#portal-globalnav"/>
@@ -55,6 +65,10 @@
 
         <replace css:theme-children=".portal-siteactions"
             css:content-children="#portal-siteactions"/>
+        
+        <!-- For privacy policy -->
+        <drop css:content="#siteaction-privacy"/>
+        <replace css:theme-children=".footer-bottom div:nth-of-type(1) p" css:content-children="#siteaction-privacy" />
         
         <!-- search -->
         <replace css:theme-children=".search-container">
@@ -122,30 +136,34 @@
                     </div>
                 </xsl:for-each>
             </replace>
-            <!--<replace css:theme-children=".blog-section" css:content-children=".blog-section" />-->
+            
+            <!--On the Blog-->
             <replace css:theme-children=".blog-section > div">
                 
-                <xsl:if css:test=".portletRss">
+                <xsl:if css:test=".portletEappiRss">
                     <h3><xsl:copy-of css:select=".portletHeader a" /></h3>
                     <div class="row">
-                        <xsl:for-each css:select=".portletRss .portletItem">
+                        <xsl:for-each css:select=".portletEappiRss .portletItem">
                             <div class="large-6 medium-6 columns blog-item-wrapper">
+                                <div class="post-img">
+                                    <xsl:element name="a">
+                                        <xsl:attribute name="href">
+                                                <xsl:value-of select="a/@href" />
+                                        </xsl:attribute>
+                                            <xsl:copy-of select="a/img" />
+                                    </xsl:element>
+                                </div>
                                 <article class="blog-post">
-                                    <div class="post-img">
-                                        <!--<a href="">-->
-                                        <!--  <img src="" />-->
-                                        <!--</a>-->
-                                    </div>
                                     <div class="post-text">
-                                        <p class="post-date"><xsl:value-of select="a/span" /></p>
-                                        <p>
+                                        <span class="post-date"><xsl:value-of select="a/span" /></span>
+                                        <div>
                                             <xsl:element name="a">
                                                 <xsl:attribute name="href">
                                                     <xsl:value-of select="a/@href" />
                                                 </xsl:attribute>
                                                 <xsl:copy-of select="a/text()" />
                                             </xsl:element>
-                                        </p>
+                                        </div>
                                     </div>
                                 </article>
                             </div>
