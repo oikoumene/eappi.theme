@@ -24,6 +24,16 @@
 
         <replace css:theme="#logo"
             css:content="#portal-logo"/>
+        
+        <replace css:theme="#mobile-logo">
+            <xsl:element name="a">
+                <xsl:attribute name="href"><xsl:value-of select="//a[@id='portal-logo']/@href" /></xsl:attribute>
+                <xsl:element name="img">
+                    <xsl:attribute name="src">/++theme++eappi.theme/images/mobile-logo.png</xsl:attribute>
+                    <xsl:attribute name="alt">EAPPI Logo for Mobile</xsl:attribute>
+                </xsl:element>
+            </xsl:element>
+        </replace>
 
         <replace css:theme-children="#portal-globalnav"
             css:content-children="#portal-globalnav"/>
