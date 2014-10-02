@@ -145,24 +145,28 @@
                     <div class="row">
                         <xsl:for-each css:select=".portletEappiRss .portletItem">
                             <div class="large-6 medium-6 columns blog-item-wrapper">
-                                <div class="post-img">
-                                    <xsl:element name="a">
-                                        <xsl:attribute name="href">
-                                                <xsl:value-of select="a/@href" />
-                                        </xsl:attribute>
-                                            <xsl:copy-of select="a/img" />
-                                    </xsl:element>
-                                </div>
                                 <article class="blog-post">
+                                    <xsl:if test="a/img[contains(@src, 'http')]">
+                                        <div class="post-img">
+                                            <xsl:element name="a">
+                                                <xsl:attribute name="href">
+                                                        <xsl:value-of select="a/@href" />
+                                                </xsl:attribute>
+                                                    <xsl:copy-of select="a/img" />
+                                            </xsl:element>
+                                        </div>
+                                    </xsl:if>
                                     <div class="post-text">
                                         <span class="post-date"><xsl:value-of select="a/span" /></span>
                                         <div>
-                                            <xsl:element name="a">
-                                                <xsl:attribute name="href">
-                                                    <xsl:value-of select="a/@href" />
-                                                </xsl:attribute>
-                                                <xsl:copy-of select="a/text()" />
-                                            </xsl:element>
+                                            <p>
+                                                <xsl:element name="a">
+                                                    <xsl:attribute name="href">
+                                                        <xsl:value-of select="a/@href" />
+                                                    </xsl:attribute>
+                                                    <xsl:copy-of select="a/text()" />
+                                                </xsl:element>
+                                            </p>
                                         </div>
                                     </div>
                                 </article>
