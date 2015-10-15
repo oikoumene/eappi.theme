@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.26 (2015-10-15)
+-----------------
+
+- fixed error in js of map
+
+
 1.25 (unreleased)
 -----------------
 
